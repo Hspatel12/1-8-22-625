@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> element object</h1>
+    <h2> use a focus() and blur()method</h2>
+
+    <input type="text"id="mytext" value="A text filed">
+    <p> remove the focus click on a lose focus button.</p>
+
+    <button type="button" onclick="getfocus()"> getfocus</button>
+    <button type="button" onclick="losefocus()">losefocus</button>
+
+    <script>
+         function getfocus()
+         {
+            document.getElementById("mytext").focus();
+            document.getElementById("mytext").style.backgroundColor="yellow"
+         }
+
+         function losefocus()
+         {
+            document.getElementById("mytext").blur();
+            document.getElementById("mytext").style.backgroundColor="red"
+
+         }
+         </script>   
+
+</body>
+</html>
